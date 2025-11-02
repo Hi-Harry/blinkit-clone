@@ -1,29 +1,30 @@
 .product-card {
-    position: relative;
-    background: white;
-    border-radius: .4rem;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
-    width: 15rem;
-    cursor: pointer;
+  position: relative;
+  background: white;
+  border-radius: 0.4rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  width: 15rem;
+  cursor: pointer;
 }
 
 .product-image {
-    height: 13rem;
-    width: 10rem;
-    object-fit: cover;
-    border-radius: 0.25rem;
-    margin-bottom: 0.5rem;
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
 }
 
 .product.title {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .product-price {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .add-button {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }

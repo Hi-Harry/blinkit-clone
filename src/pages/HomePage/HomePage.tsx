@@ -3,12 +3,15 @@ import { Product } from "../../Types";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import "./HomePage.css";
 
-const HomePage: React.FC<{ onAdd: (product: Product) => void }> = ({ onAdd }) => {
+const HomePage: React.FC<{ onAdd: (product: Product) => void }> = ({
+  onAdd,
+}) => {
   const [products, setProducts] = useState<Product[]>([]);
 
   const getProducts = async () => {
-    const resp = await (await fetch("https://fakestoreapi.in/api/products")).json();
-    const data = resp.products;
+    const data = await (
+      await fetch("https://fakestoreapi.com/products")
+    ).json();
     setProducts(data);
   };
 
